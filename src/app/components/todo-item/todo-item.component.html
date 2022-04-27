@@ -1,0 +1,10 @@
+<div class="todo-item">
+  <div>
+    <div [ngClass]="{'todo-item-completed': todo.completed}" (click)="toogleDone()">
+      {{todo.title}}
+    </div>
+  <div class="todo-item-delete" (click)="deleteTodo()">
+    🗑️
+  </div>
+</div>
+</div>

@@ -1,0 +1,36 @@
+.todo-add {
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  background-color: var(--Black3);
+  border-radius: .3em;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 9.6em;
+  height: 2em;
+
+  input {
+    padding-left: 1em;
+    max-width: 6em;
+    height: 2em;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: .2em;
+    border-left: solid .2em var(--Lavender);
+    margin-right: .5em;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black3);
+    border-radius: .3em;
+    border: none;
+    background-color: var(--Black4);
+    height: 1.3em;
+    width: 1.3em;
+    padding: .1em;
+    cursor: pointer;
+  }
+}

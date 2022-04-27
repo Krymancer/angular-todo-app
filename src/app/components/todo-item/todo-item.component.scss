@@ -1,0 +1,51 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--Black3);
+  border-radius: .3em;
+  margin: 1em;
+
+  &:before {
+    justify-self: flex-start;
+
+    background-color: var(--Lavender);
+    height: 2em;
+    width: .2em;
+    content: '';
+
+    border-radius: 5px 0 0 5px;
+    margin-right: 1em;
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+.todo-item-delete {
+  justify-self: flex-end;
+  cursor: pointer;
+  font-weight: bold;
+  padding: .1em;
+  margin-right: .3em;
+  margin-left: .2em;
+  background-color: var(--Black4);
+  border-radius: .3em;
+  justify-self: flex-end;
+  max-width: 1.4em;
+  user-select: none;
+  transition: all .2s;
+
+  &:hover {
+    background-color: var(--Black2);
+  }
+}
+
+.todo-item-completed {
+  text-decoration: line-through;
+}
